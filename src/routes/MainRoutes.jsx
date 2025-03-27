@@ -12,12 +12,6 @@ const SamplePage = Loadable(lazy(() => import('pages/extra-pages/sample-page')))
 // insight analytics
 const InsightAnalytics = Loadable(lazy(() => import('pages/insight-analytics/index')));
 
-// data entry
-const DataEntry = Loadable(lazy(() => import('pages/data-entry/index')));
-
-// users
-// const Users = Loadable(lazy(() => import('pages/users/index')));
-
 // ==============================|| MAIN ROUTING ||============================== //
 
 const MainRoutes = {
@@ -40,10 +34,6 @@ const MainRoutes = {
     {
       path: 'sample-page',
       element: <SamplePage />
-    },
-    {
-      path: 'data-entry',
-      element: <DataEntry />
     },
     {
       path: 'insight-analytics',
